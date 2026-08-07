@@ -82,14 +82,14 @@
       - test_flow_executions.json[2].priority == 0
       - test_flow_executions.json[2].level == 1
       - test_flow_executions.json[2].authenticationConfig is not none
-      - test_flow_executions.json[2]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[2]['authenticationFlow'] is not defined or test_flow_executions.json[2].authenticationFlow == false
       - test_flow_executions.json[3].providerId == "auth-cookie"
       - test_flow_executions.json[3].requirement == "REQUIRED"
       - test_flow_executions.json[3].index == 1
       - test_flow_executions.json[3].priority == 1
       - test_flow_executions.json[3].level == 1
       - test_flow_executions.json[3]['authenticationConfig'] is not defined
-      - test_flow_executions.json[3]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[3]['authenticationFlow'] is not defined or test_flow_executions.json[3].authenticationFlow == false
       - test_flow_executions.json[4].displayName == "Integration Test Flow - Handle Existing Account"
       - test_flow_executions.json[4].requirement == "ALTERNATIVE"
       - test_flow_executions.json[4].index == 2
@@ -103,14 +103,14 @@
       - test_flow_executions.json[5].priority == 0
       - test_flow_executions.json[5].level == 2
       - test_flow_executions.json[5]['authenticationConfig'] is not defined
-      - test_flow_executions.json[5]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[5]['authenticationFlow'] is not defined or test_flow_executions.json[5].authenticationFlow == false
       - test_flow_executions.json[6].providerId == "auth-cookie"
       - test_flow_executions.json[6].requirement == "DISABLED"
       - test_flow_executions.json[6].index == 2
       - test_flow_executions.json[6].priority == 2
       - test_flow_executions.json[6].level == 0
       - test_flow_executions.json[6]['authenticationConfig'] is not defined
-      - test_flow_executions.json[6]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[6]['authenticationFlow'] is not defined or test_flow_executions.json[6].authenticationFlow == false
 
 - name: Fetch flow execution config for 'idp-review-profile'
   ansible.builtin.uri:

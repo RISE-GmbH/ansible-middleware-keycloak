@@ -29,7 +29,7 @@
 
 - name: Assert that the flow does not exist anymore
   ansible.builtin.uri:
-    url: "{{ auth_keycloak_url }}/admin/realms/{{ target_realm }}/authentication/flows/Integratoin%20Test%20Flow/executions"
+    url: "{{ auth_keycloak_url }}/admin/realms/{{ target_realm }}/authentication/flows/Integration%20Test%20Flow/executions"
     method: GET
     headers:
       Accept: application/json

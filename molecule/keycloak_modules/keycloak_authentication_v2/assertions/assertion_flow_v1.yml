@@ -82,7 +82,7 @@
       - test_flow_executions.json[2].priority == 0
       - test_flow_executions.json[2].level == 1
       - test_flow_executions.json[2].authenticationConfig is not none
-      - test_flow_executions.json[2]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[2]['authenticationFlow'] is not defined or test_flow_executions.json[2].authenticationFlow == false
       - test_flow_executions.json[3].displayName == "Integration Test Flow - Handle Existing Account"
       - test_flow_executions.json[3].requirement == "ALTERNATIVE"
       - test_flow_executions.json[3].index == 1
@@ -96,14 +96,14 @@
       - test_flow_executions.json[4].priority == 0
       - test_flow_executions.json[4].level == 2
       - test_flow_executions.json[4]['authenticationConfig'] is not defined
-      - test_flow_executions.json[4]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[4]['authenticationFlow'] is not defined or test_flow_executions.json[4].authenticationFlow == false
       - test_flow_executions.json[5].providerId == "auth-cookie"
       - test_flow_executions.json[5].requirement == "REQUIRED"
       - test_flow_executions.json[5].index == 2
       - test_flow_executions.json[5].priority == 2
       - test_flow_executions.json[5].level == 0
       - test_flow_executions.json[5]['authenticationConfig'] is not defined
-      - test_flow_executions.json[5]['authenticationFlow'] is not defined or test_flow_executions.json[0].authenticationFlow == false
+      - test_flow_executions.json[5]['authenticationFlow'] is not defined or test_flow_executions.json[5].authenticationFlow == false
 
 - name: Fetch flow execution config for 'idp-review-profile'
   ansible.builtin.uri:

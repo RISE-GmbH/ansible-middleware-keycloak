@@ -9,7 +9,7 @@
   ansible.builtin.include_tasks:
     file: ../actions/flow_v1.yml
 
-- name: Modify the flow <Integration Test Flow>'
+- name: Modify the flow <Integration Test Flow>
   ansible.builtin.include_tasks:
     file: ../actions/flow_v2.yml
 
